@@ -47,6 +47,12 @@ Test: 'It should construct an order instance'
 Code: let newOrder = new Order();
 Expect(newOrder).toEqual(Order pizzas {})
 
+Test: 'It should store instances of Pizza in the Order object'
+Expect(Order.prototype.addPizzaOrder).toEqual(pizza {})
+
+Test: 'It should assign an orderId to each instance of Pizza that is added to Order'
+Expect(Order.prototype.assignId).toEqual(this.currentOrderId +=1)
+
 Describe: Pizza()
 Test: 'It should construct instances of Pizza'
 Code: let newPizza = new Pizza();
