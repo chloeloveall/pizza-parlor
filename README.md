@@ -21,6 +21,10 @@
 _In depth description_<br><br>
 _View project on GH Pages: [gh-pages](https://chloeloveall.github.io/pizza-parlor/)_<br><br>
 
+## Note(s) to Epicodus Instructors
+
+_1/29/2021: There will be some intermittent gaps in the commit history due to time to review lessons from the week. 
+
 ## Setup/Installation Requirements
 
 1. Clone the repository
@@ -38,13 +42,21 @@ _View project on GH Pages: [gh-pages](https://chloeloveall.github.io/pizza-parlo
 
 ## Tests 
 
+Describe: Order()
+Test: 'It should construct an order instance'
+Code: let newOrder = new Order();
+Expect(newOrder).toEqual(Order pizzas {})
+
 Describe: Pizza()
 Test: 'It should construct instances of Pizza'
 Code: let newPizza = new Pizza();
 Expect(newPizza).toEqual(Pizza {newPizza})
 
-Test: 'It should add the cost of selected toppings and and pizza size to the totalPizza cost'
-Expect(Pizza.addChoices).toEqual(this.pizzaSize + this.toppings = this.totalPizzaCost)
+<!-- Test: 'It should determine the starting price based on the size of the pizza'
+Expect(Pizza.sizeSelect).toEqual(basePrice) -->
+
+<!-- Test: 'It should add the cost of selected toppings and and pizza size to the totalPizza cost'
+Expect(Pizza.addChoices).toEqual(this.pizzaSize + this.toppings = this.totalPizzaCost) -->
 
 ## Known Bugs
 
