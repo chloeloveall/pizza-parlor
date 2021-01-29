@@ -28,6 +28,21 @@ _View project on GH Pages: [gh-pages](https://chloeloveall.github.io/pizza-parlo
 2. Open the portfolio-website directory in a code editor (VS Code is recommended)
 3. To view the site from VS Code, use the Live Server extension to open index.html in your preferred browser 
 
+## Specifications 
+
+| Behavior                                                               | Input      | Output             |
+| ---------------------------------------------------------------------- | ---------- | ------------------ |
+| The user can select size of pizza and it will add to the total cost    | small      | 10                 |
+| The user can select a topping and it will add to the total cost        | cheese     | totalPizzaCost + 2 |
+| The user can submit to see the final cost                              | submit     | totalPizxa Cost    |
+
+## Tests 
+
+Describe: Pizza()
+Test: 'It should construct instances of Pizza'
+Code: let newPizza = new Pizza();
+Expect(newPizza).toEqual(Pizza {newPizza})
+
 ## Known Bugs
 
 * None
