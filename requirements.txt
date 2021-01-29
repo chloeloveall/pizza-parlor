@@ -1,0 +1,12 @@
+Pizza Constructor
+    this.toppings = {cheese: 2, pepperoni: 3}
+    this.pizzaSize {small: 10, large: 15}
+    this.totalPizzaCost = 0
+    |
+    prototype to calculate cost
+    this.toppings + this.size = this.totalPizzaCost
+    |
+    prototype to check for selected toppings (radio button input?)
+
+
+    
