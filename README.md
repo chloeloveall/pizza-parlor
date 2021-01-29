@@ -1,6 +1,6 @@
 # _Pizza Parlor: Cut My Life into Pizzas_
 
-#### _A web application that allows a user to order a pizza and choose toppings, choose a size, and see the final cost_
+#### _Epicodus Week 4 Project: A web application that allows a user to order a pizza and choose toppings, choose a size, and see the final cost_
 
 #### By _**Chloe Loveall**_
 
