@@ -43,6 +43,9 @@ Test: 'It should construct instances of Pizza'
 Code: let newPizza = new Pizza();
 Expect(newPizza).toEqual(Pizza {newPizza})
 
+Test: 'It should add the cost of selected toppings and and pizza size to the totalPizza cost'
+Expect(Pizza.addChoices).toEqual(this.pizzaSize + this.toppings = this.totalPizzaCost)
+
 ## Known Bugs
 
 * None
