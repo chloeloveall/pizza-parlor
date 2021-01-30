@@ -9,7 +9,6 @@
 * HTML
 * CSS
 * Bootstrap
-* coolors.co
 * Git
 * Github
 * VS Code
@@ -23,7 +22,7 @@ _View project on GH Pages: [gh-pages](https://chloeloveall.github.io/pizza-parlo
 
 ## Note(s) to Epicodus Instructors
 
-_1/29/2021: There will be some intermittent gaps in the commit history due to time to review lessons from the week. 
+_1/29/2021: There will be some intermittent gaps in the commit history due to time to review lessons from the week._
 
 ## Setup/Installation Requirements
 
@@ -38,7 +37,7 @@ _1/29/2021: There will be some intermittent gaps in the commit history due to ti
 | ---------------------------------------------------------------------- | ---------- | ------------------ |
 | The user can select size of pizza and it will add to the total cost    | small      | 10                 |
 | The user can select a topping and it will add to the total cost        | cheese     | totalPizzaCost + 2 |
-| The user can submit to see the final cost                              | submit     | totalPizxa Cost    |
+| The user can submit to see the final cost                              | submit     | totalPizza Cost    |
 
 ## Tests 
 
