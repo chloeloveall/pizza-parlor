@@ -12,26 +12,28 @@
     <h1>Quattro Formaggi Pizzeria</h1>
 
     <form id="order-form">
-      <div class="form-question">
-        <label for="userName">Name:</label>
-        <input id="userName" class="form-control" type="text">
+      <div class="form-group">
+        <label for="orderName">Name:</label>
+        <input id="orderName" class="form-control" type="text">
       </div>
-      <div class="form-question">
+      <div class="form-group">
         <p>Select a size:</p>
-        <input type="radio" id="small" name="pizzaSize" value="10">
+        <input type="radio" id="small" name="pizzaSize" value="small">
         <label for="small">Small</label>
-        <input type="radio" id="large" name="pizzaSize" value="15">
+        <input type="radio" id="medium" name="pizzaSize" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="pizzaSize" value="large">
         <label for="large">Large</label>
       </div>
-      <div class="form-question">
+      <div class="form-group">
         <p>Select your toppings:</p>
-        <input type="checkbox" id="cheese" name="cheese" value="yes">
+        <input type="checkbox" id="cheese" name="topping" value="cheese">
         <label for="cheese">Cheese</label>
-        <input type="checkbox" id="pepperoni" name="pepperoni" value="yes">
+        <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
         <label for="pepperoni">Pepperoni</label>
-        <input type="checkbox" id="jalepeno" name="jalepeno" value="yes">
+        <input type="checkbox" id="jalepeno" name="topping" value="jalepeno">
         <label for="jalepeno">Jalapeño</label>
-        <input type="checkbox" id="pineapple" name="pineapple" value="yes">
+        <input type="checkbox" id="pineapple" name="topping" value="pineapple">
         <label for="checkbox">Pineapple</label>
       </div>
       <button type="submit" class="btn btn-secondary btn-block">Submit Order</button>
