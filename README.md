@@ -17,7 +17,7 @@
 
 ## Description
 
-_In depth description_
+_A simple form that allows user to input their name, a size choice, and up to four toppings. Submitting the form returns a custom thank you message with their name (or "user" if no name input received0 and their order total._
 
 ## Note(s) to Epicodus Instructors
 
@@ -40,33 +40,33 @@ _1/29/2021: There will be some intermittent gaps in the commit history due to ti
 
 ## Tests 
 
-Describe: Order()
-Test: 'It should construct an order instance'
+Describe: Order()  
+Test: 'It should construct an order instance'  
 Code: let newOrder = new Order();
 Expect(newOrder).toEqual(Order pizzas {})
 
-Test: 'It should store instances of Pizza in the Order object'
-Expect(Order.prototype.addPizzaOrder).toEqual(pizza {})
+Test: 'It should store instances of Pizza in the Order object'  
+Expect(Order.prototype.addPizzaOrder).toEqual(pizza {})  
 
-Test: 'It should assign an orderId to each instance of Pizza that is added to Order'
-Expect(Order.prototype.assignId).toEqual(this.currentOrderId +=1)
+Test: 'It should assign an orderId to each instance of Pizza that is added to Order'  
+Expect(Order.prototype.assignId).toEqual(this.currentOrderId +=1)  
 
-Describe: Pizza()
-Test: 'It should construct instances of Pizza'
-Code: let newPizza = new Pizza();
-Expect(newPizza).toEqual(Pizza {newPizza})
+Describe: Pizza()  
+Test: 'It should construct instances of Pizza'  
+Code: let newPizza = new Pizza();  
+Expect(newPizza).toEqual(Pizza {newPizza})  
 
-Test: 'It should determine the starting price based on the size of the pizza'
-Expect(Pizza.addSize).toEqual(basePrice)
+Test: 'It should determine the starting price based on the size of the pizza'  
+Expect(Pizza.addSize).toEqual(basePrice)  
 
-Test: 'It should add together the cost of selected toppings'
-Expect(Pizza.addToppings).toEqual(toppingsPrice)
+Test: 'It should add together the cost of selected toppings'  
+Expect(Pizza.addToppings).toEqual(toppingsPrice)  
 
-Test: 'It should add the size cost and toppings cost'
-Expect(Pizza.calculateTotalPrice).toEqual(totalPizzaCost)
+Test: 'It should add the size cost and toppings cost'  
+Expect(Pizza.calculateTotalPrice).toEqual(totalPizzaCost)  
 
-Test: 'It should assign a default name if none if entered'
-Expect(Pizza.defaultNameOption).toEqual(User)
+Test: 'It should assign a default name if none if entered'  
+Expect(Pizza.defaultNameOption).toEqual(User)  
 
 ## Known Bugs
 
