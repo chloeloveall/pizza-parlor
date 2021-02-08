@@ -17,8 +17,7 @@
 
 ## Description
 
-_In depth description_<br><br>
-_View project on GH Pages: [gh-pages](https://chloeloveall.github.io/pizza-parlor/)_<br><br>
+_In depth description_
 
 ## Note(s) to Epicodus Instructors
 
@@ -68,7 +67,7 @@ Expect(Pizza.calculateTotalPrice).toEqual(totalPizzaCost)
 
 ## Known Bugs
 
-* None
+* None at this time
 
 ## License
 
