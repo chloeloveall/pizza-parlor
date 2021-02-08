@@ -33,11 +33,11 @@ _1/29/2021: There will be some intermittent gaps in the commit history due to ti
 
 ## Specifications 
 
-| Behavior                                                               | Input      | Output             |
-| ---------------------------------------------------------------------- | ---------- | ------------------ |
-| The user can select size of pizza and it will add to the total cost    | small      | 10                 |
-| The user can select a topping and it will add to the total cost        | cheese     | totalPizzaCost + 2 |
-| The user can submit to see the final cost                              | submit     | totalPizza Cost    |
+| Behavior                                                               | Input      | Output          |
+| ---------------------------------------------------------------------- | ---------- | --------------- |
+| The user can select size of pizza and it will add to the total cost    | small      | 10              |
+| The user can select a topping and it will add to the toppings cost     | cheese     | 3               |
+| The user can submit to see the final cost                              | submit     | totalPizza Cost |
 
 ## Tests 
 
@@ -57,11 +57,14 @@ Test: 'It should construct instances of Pizza'
 Code: let newPizza = new Pizza();
 Expect(newPizza).toEqual(Pizza {newPizza})
 
-<!-- Test: 'It should determine the starting price based on the size of the pizza'
-Expect(Pizza.sizeSelect).toEqual(basePrice) -->
+Test: 'It should determine the starting price based on the size of the pizza'
+Expect(Pizza.addSize).toEqual(basePrice)
 
-<!-- Test: 'It should add the cost of selected toppings and and pizza size to the totalPizza cost'
-Expect(Pizza.addChoices).toEqual(this.pizzaSize + this.toppings = this.totalPizzaCost) -->
+Test: 'It should add together the cost of selected toppings'
+Expect(Pizza.addToppings).toEqual(toppingsPrice)
+
+Test: 'It should add the size cost and toppings cost'
+Expect(Pizza.calculateTotalPrice).toEqual(totalPizzaCost)
 
 ## Known Bugs
 
