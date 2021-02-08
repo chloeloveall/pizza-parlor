@@ -24,6 +24,16 @@ function Pizza(orderName, pizzaSize, toppings, totalPizzaCost) {
   this.totalPizzaCost = totalPizzaCost;
 };
 
+// Assigns a default name if none is entered
+Pizza.prototype.defaultNameOption = function() {
+  if (this.orderName === '' || this.orderName === ' ' || this.orderName === null) {
+    return 'User';
+  } else {
+    return this.orderName;
+  }
+}
+
+// Assigns a base price based on the user's size input
 Pizza.prototype.addSize = function() {
   if (this.pizzaSize === 'large') {
     return this.totalPizzaCost = 20;
@@ -33,7 +43,7 @@ Pizza.prototype.addSize = function() {
     return this.totalPizzaCost = 10;
   }
 };
-
+// Loops through toppings array and adds 3 for each that is selected
 Pizza.prototype.addToppings = function() { 
   let toppingsPrice = 0;
   this.toppings.forEach(function() {
@@ -41,9 +51,10 @@ Pizza.prototype.addToppings = function() {
   })
   return toppingsPrice;
 };
-
+// Adds the values of addSize and addToppings and returns a custom thank you message
 Pizza.prototype.calculateTotalCost = function() {
-  return this.totalPizzaCost = this.addSize() + this.addToppings();
+  this.totalPizzaCost = this.addSize() + this.addToppings();
+  return `Thank you for your order ${this.defaultNameOption()}! Your total is $${this.totalPizzaCost}.`
 };
 
 // User Interface Logic ---------
@@ -58,9 +69,8 @@ $(document).ready(function() {
     })
     const pizza = new Pizza(orderName, pizzaSize, toppings);
     const order = new Order();
-    order.addPizzaOrder(pizza);
-
-    console.log(pizza);
-    console.log(pizza.calculateTotalCost());
+    order.addPizzaOrder(pizza);q
+    $('#show-total').text(pizza.calculateTotalCost()).show();
+    $('form#order-form').hide();
   });
 });
