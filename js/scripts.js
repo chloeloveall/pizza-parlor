@@ -69,7 +69,7 @@ $(document).ready(function() {
     })
     const pizza = new Pizza(orderName, pizzaSize, toppings);
     const order = new Order();
-    order.addPizzaOrder(pizza);q
+    order.addPizzaOrder(pizza);
     $('#show-total').text(pizza.calculateTotalCost()).show();
     $('form#order-form').hide();
   });
