@@ -65,6 +65,9 @@ Expect(Pizza.addToppings).toEqual(toppingsPrice)
 Test: 'It should add the size cost and toppings cost'
 Expect(Pizza.calculateTotalPrice).toEqual(totalPizzaCost)
 
+Test: 'It should assign a default name if none if entered'
+Expect(Pizza.defaultNameOption).toEqual(User)
+
 ## Known Bugs
 
 * None at this time
